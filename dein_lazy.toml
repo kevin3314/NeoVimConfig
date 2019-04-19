@@ -1,0 +1,76 @@
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+hook_add = '''
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#sources#jedi#enable_typeinfo = 1
+
+let g:deoplete#sources#jedi#python_path = expand('~/.pyenv/versions/anaconda3-5.2.0/bin/python')
+
+let g:deoplete#max_list = 20
+let g:deoplete#auto_complete_delay = 1
+let g:deoplete#auto_complete_start_length = 1
+let g:deoplete#enable_camel_case = 0
+let g:deoplete#enable_ignore_case = 0
+let g:deoplete#enable_refresh_always = 0
+let g:deoplete#enable_smart_case = 0
+let g:deoplete#file#enable_buffer_path = 1
+
+inoremap <expr><tab> pumvisible() ? "\<C-n>" :
+        \ neosnippet#expandable_or_jumpable() ?
+        \    "\<Plug>(neosnippet_expand_or_jump)" : "\<tab>"
+
+let g:deoplete#sources#jedi#show_docstring = 1
+'''
+on_i = 1
+
+#python
+[[plugins]]
+repo = 'deoplete-plugins/deoplete-jedi'
+on_i = 1
+on_ft = ['py', 'python']
+
+#ruby
+#repo = 'uplus/deoplete-solargraph'
+#soragraph
+#repo = 'tbodt/deoplete-tabnine',  { 'do': './install.sh' }
+
+[[plugins]]
+repo = 'shougo/neco-vim'
+on_source = ['deoplete.nvim']
+
+[[plugins]]
+repo = 'shougo/neco-syntax'
+on_source = ['deoplete.nvim']
+
+[[plugins]]
+repo = 'shougo/neosnippet'
+on_source = ['deoplete.nvim']
+
+[[plugins]]
+repo = 'shougo/neosnippet-snippets'
+on_source = ['deoplete.nvim']
+
+
+[[plugins]]
+repo = 'w0rp/ale'
+hook_add = '''
+let g:ale_sign_column_always = 1
+let g:ale_sign_error = '⨉'
+let g:ale_sign_warning = '△'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+
+let g:ale_linter= {
+  \ 'python': ['flake8'],
+  \ 'ruby'  : ['rubocop'],
+  \ }
+let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed = 'never'
+
+let g:ale_fixers = {
+    \ 'python': ['autopep8', 'black', 'isort'],
+    \ 'ruby'  : ['rubocop'],
+    \ }
+
+let g:ale_fix_on_save = 0
+'''
+on_ft = ['py', 'python', 'rb', 'ruby']
