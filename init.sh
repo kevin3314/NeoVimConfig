@@ -27,8 +27,11 @@ fi
 
 #pyenv global '3.7.0'
 
+#pip install 'autopep8'
+#pip install 'black'
+#pip install 'isort'
+#pip install 'flake8'
 #pip install 'pynvim'
-
 #pip install 'jedi'
 
 #pyenv global 'anaconda3-5.2.0'

@@ -5,8 +5,8 @@ let g:deoplete#enable_at_startup = 1
 
 let g:deoplete#sources#jedi#python_path = expand('~/.pyenv/versions/anaconda3-5.2.0/bin/python')
 
-let g:deoplete#max_list = 15
-let g:deoplete#auto_complete_delay = 1
+let g:deoplete#max_list = 20
+let g:deoplete#auto_complee_delay = 1
 let g:deoplete#auto_complete_start_length = 1
 let g:deoplete#enable_camel_case = 0
 let g:deoplete#enable_ignore_case = 0
