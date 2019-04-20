@@ -2,6 +2,8 @@
 
 #brew install neovim
 
+#---------------- ~/.config/nvim setup ----------------
+
 if [ ! -d ~/.config ]; then
   mkdir ~/.config
 fi
@@ -14,9 +16,10 @@ if [ ! -d ~/.config/nvim ]; then
   mv ~/.config/NeoVimConfig ~/.config/nvim
 fi
 
+#---------------- pyenv setup ----------------
+
 #brew install pyenv
 #echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
-
 #exec $SHELL -l
 
 #sudo installer -pkg '/Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg' -target /
@@ -40,3 +43,17 @@ fi
 #pip install 'pynvim'
 
 #pyenv global 'system'
+
+#---------------- rbenv setup ----------------
+
+#brew install rbenv
+#echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+#echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
+#brew install ruby-build
+#brew install rbenv-gemset
+#brew install rbenv-gem-rehash
+
+#rbenv install '2.5.0'
+#rbenv rehash
+#rbenv global '2.5.0'
+#gem install bundler
