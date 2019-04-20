@@ -47,6 +47,8 @@ fi
 #---------------- rbenv setup ----------------
 
 #brew install rbenv
+#brew install postgresql
+#brew install yarn
 #echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
 #echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
 #brew install ruby-build
