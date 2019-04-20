@@ -2,6 +2,8 @@
 repo = 'Shougo/deoplete.nvim'
 hook_add = '''
 let g:deoplete#enable_at_startup = 1
+let g:deoplete#sources#jedi#enable_type_info = 1
+let g:deoplete#sources#jedi#show_docstring = 1
 
 let g:deoplete#sources#jedi#python_path = expand('~/.pyenv/versions/anaconda3-5.2.0/bin/python')
 
