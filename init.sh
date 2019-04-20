@@ -31,4 +31,9 @@ fi
 
 #pip install 'jedi'
 
+#pyenv global 'anaconda3-5.2.0'
+
+#pip install 'jedi'
+#pip install 'pynvim'
+
 #pyenv global 'system'
