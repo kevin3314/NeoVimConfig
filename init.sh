@@ -13,3 +13,22 @@ fi
 if [ ! -d ~/.config/nvim ]; then
   mv ~/.config/NeoVimConfig ~/.config/nvim
 fi
+
+#brew install pyenv
+#echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
+
+#exec $SHELL -l
+
+#sudo installer -pkg '/Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg' -target /
+
+#pyenv install '3.7.0'
+
+#pyenv install 'anaconda3-5.2.0'
+
+#pyenv global '3.7.0'
+
+#pip install 'pynvim'
+
+#pip install 'jedi'
+
+#pyenv global 'system'
