@@ -42,15 +42,6 @@ repo = 'shougo/neco-syntax'
 on_source = ['deoplete.nvim']
 
 [[plugins]]
-repo = 'shougo/neosnippet'
-on_source = ['deoplete.nvim']
-
-[[plugins]]
-repo = 'shougo/neosnippet-snippets'
-on_source = ['deoplete.nvim']
-
-
-[[plugins]]
 repo = 'w0rp/ale'
 hook_add = '''
 let g:ale_sign_column_always = 1
