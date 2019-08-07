@@ -19,6 +19,7 @@ fi
 #---------------- pyenv setup ----------------
 
 #brew install pyenv
+#brew install pyenv-virtualenv
 #echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
 #exec $SHELL -l
 
