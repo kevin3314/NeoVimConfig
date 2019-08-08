@@ -42,6 +42,7 @@ fi
 
 #pip install 'jedi'
 #pip install 'pynvim'
+#conda install -y -c conda-forge jupyter_contrib_nbextensions
 
 #pyenv global 'system'
 
