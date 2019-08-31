@@ -1,6 +1,6 @@
-#/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-#brew install neovim
+brew install neovim
 
 #---------------- ~/.config/nvim setup ----------------
 
@@ -18,11 +18,11 @@ fi
 
 #---------------- pyenv setup ----------------
 
-#brew install pyenv
-#echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
-#exec $SHELL -l
+brew install pyenv
+echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
+exec $SHELL -l
 
-#sudo installer -pkg '/Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg' -target /
+sudo installer -pkg '/Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg' -target /
 
 #pyenv install '3.7.0'
 

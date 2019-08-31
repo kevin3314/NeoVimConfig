@@ -40,7 +40,7 @@ autocmd ColorScheme * highlight SpellCap ctermbg=52 gui=undercurl guisp=#FF0000
 
 "Dein Script --------------------------------
 " Add path to python 3
-let g:python3_host_prog = expand('~/.pyenv/versions/3.7.0/bin/python')
+let g:python3_host_prog = system('(type pyenv &>/dev/null && echo -n "$PYENV_VIRTUAL_ENV/bin/python") || echo -n $(which python3)')
 
 "プラグインをインストールするディレクトリ
 let s:dein_dir = expand('~/.cache/dein')

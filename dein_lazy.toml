@@ -5,7 +5,7 @@ let g:deoplete#enable_at_startup = 1
 let g:deoplete#sources#jedi#enable_type_info = 1
 let g:deoplete#sources#jedi#show_docstring = 1
 
-let g:deoplete#sources#jedi#python_path = expand('~/.pyenv/versions/anaconda3-5.2.0/bin/python')
+let g:deoplete#sources#jedi#python_path = g:python3_host_prog
 
 let g:deoplete#max_list = 50
 let g:deoplete#auto_complee_delay = 1
