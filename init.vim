@@ -101,6 +101,25 @@ nnoremap t- <C-w>-
 "タブ操作
 nnoremap st :<C-u>tabnew<CR>
 
+" Denite mapping
+function! g:GetVisualWord() abort
+  let word = getline("'<")[getpos("'<")[2] - 1:getpos("'>")[2] - 1]
+  return word
+endfunction
+
+function! g:GetVisualWordEscape() abort
+  let word = substitute(GetVisualWord(), '\\', '\\\\', 'g')
+  let word = substitute(word, '[.?*+^$|()[\]]', '\\\0', 'g')
+  return word
+endfunction
+
+nnoremap <silent> bb :Denite buffer -mode=insert<CR>
+nnoremap <silent> df :DeniteBufferDir file/rec -mode=insert<CR>
+nnoremap <silent> dF :DeniteBufferDir file<CR>
+nnoremap <silent> dg :DeniteBufferDir -no-empty grep<CR>
+xnoremap <silent> fg :Denite grep:::`GetVisualWordEscape()`<CR>
+
+
 " vimshell map
 nnoremap <silent> vs :VimShell<CR>
 nnoremap <silent> vsc :VimShellCreate<CR>
