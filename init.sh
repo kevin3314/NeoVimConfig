@@ -26,15 +26,15 @@ if [ "$(uname)" == 'Darwin' ]; then
 
   brew install pyenv
 
-  echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
-  echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
-  echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bash_profile
-  source ~/.bash_profile
+  echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+  echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+  echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
+  source ~/.zshrc
 
   brew install pyenv-virtualenv
 
-  echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bash_profile
-  source ~/.bash_profile
+  echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
+  source ~/.zshrc
 
   sudo installer -pkg '/Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg' -target /
 
@@ -54,17 +54,17 @@ elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
   git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 
   # for pyenv
-  echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
-  echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
-  echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bash_profile
+  echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+  echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+  echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
 
-  source ~/.bash_profile
+  source ~/.zshrc
 
   # for virtualenv
   git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
-  echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bash_profile
+  echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
 
-  source ~/.bash_profile
+  source ~/.zshrc
 
   pyenv install '3.7.0'
   pyenv virtualenv '3.7.0' 'forVim'
