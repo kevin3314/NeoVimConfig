@@ -101,6 +101,9 @@ nnoremap t- <C-w>-
 "タブ操作
 nnoremap st :<C-u>tabnew<CR>
 
+" NERDTree mapping
+nnoremap <silent> nt :NERDTreeToggle<CR>
+
 " Denite mapping
 autocmd FileType denite call s:denite_my_settings()
 function! s:denite_my_settings() abort
