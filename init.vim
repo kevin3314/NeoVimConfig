@@ -99,7 +99,9 @@ nnoremap t; <C-w>+
 nnoremap t- <C-w>-
 
 "タブ操作
-nnoremap st :<C-u>tabnew<CR>
+nnoremap tc :<C-u>tabnew<CR>
+nnoremap tn :<C-u>tabNext<CR>
+nnoremap tp :<C-u>tabprevious<CR>
 
 " NERDTree mapping
 nnoremap <silent> nt :NERDTreeToggle<CR>
