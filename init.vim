@@ -102,6 +102,22 @@ nnoremap t- <C-w>-
 nnoremap st :<C-u>tabnew<CR>
 
 " Denite mapping
+autocmd FileType denite call s:denite_my_settings()
+function! s:denite_my_settings() abort
+  nnoremap <silent><buffer><expr> <CR>
+        \ denite#do_map('do_action')
+  nnoremap <silent><buffer><expr> d
+        \ denite#do_map('do_action', 'delete')
+  nnoremap <silent><buffer><expr> p
+        \ denite#do_map('do_action', 'previw')
+  nnoremap <silent><buffer><expr> q
+        \ denite#do_map('quit')
+  nnoremap <silent><buffer><expr> i
+        \ denite#do_map('open_filter_buffer')
+  nnoremap <silent><buffer><expr> <Space>
+        \ denite#do_map('toggle_select').j
+endfunction
+
 function! g:GetVisualWord() abort
   let word = getline("'<")[getpos("'<")[2] - 1:getpos("'>")[2] - 1]
   return word
@@ -113,8 +129,8 @@ function! g:GetVisualWordEscape() abort
   return word
 endfunction
 
-nnoremap <silent> bb :Denite buffer -mode=insert<CR>
-nnoremap <silent> df :DeniteBufferDir file/rec -mode=insert<CR>
+nnoremap <silent> bb :Denite buffer<CR>
+nnoremap <silent> df :DeniteBufferDir file/rec<CR>
 nnoremap <silent> dF :DeniteBufferDir file<CR>
 nnoremap <silent> dg :DeniteBufferDir -no-empty grep<CR>
 xnoremap <silent> fg :Denite grep:::`GetVisualWordEscape()`<CR>

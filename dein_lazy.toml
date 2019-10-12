@@ -56,20 +56,6 @@ on_i = 1
 [[plugins]]
 repo = 'wokalski/autocomplete-flow'
 
-
-[[plugins]]
-repo = 'wokalski/autocomplete-flow'
-
-[[plugins]]
-repo = 'Shougo/neosnippet'
-hook_add = '''
-let g:neosnippet#enable_completed_snippet = 1
-'''
-
-[[plugins]]
-repo = 'Shougo/neosnippet-snippets'
-
-
 [[plugins]]
 repo = 'w0rp/ale'
 hook_add = '''
