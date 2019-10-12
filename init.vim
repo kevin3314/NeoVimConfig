@@ -113,8 +113,8 @@ function! g:GetVisualWordEscape() abort
   return word
 endfunction
 
-nnoremap <silent> bb :Denite buffer -mode=insert<CR>
-nnoremap <silent> df :DeniteBufferDir file/rec -mode=insert<CR>
+nnoremap <silent> bb :Denite buffer<CR>
+nnoremap <silent> df :DeniteBufferDir file/rec<CR>
 nnoremap <silent> dF :DeniteBufferDir file<CR>
 nnoremap <silent> dg :DeniteBufferDir -no-empty grep<CR>
 xnoremap <silent> fg :Denite grep:::`GetVisualWordEscape()`<CR>
