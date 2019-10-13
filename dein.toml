@@ -60,3 +60,5 @@ repo = 'tpope/vim-fugitive'
 [[plugins]]
 repo = 'shougo/vimshell'
 
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
