@@ -115,7 +115,7 @@ nnoremap <Leader>gd :Gdiff<CR>
 nnoremap <Leader>gl :Glog<CR>
 
 " NERDTree mapping
-nnoremap <Leader>nt :NERDTreeToggle<CR>
+nnoremap <Leader>n :NERDTreeToggle<CR>
 
 " Denite mapping
 autocmd FileType denite call s:denite_my_settings()
