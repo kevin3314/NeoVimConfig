@@ -62,3 +62,6 @@ repo = 'shougo/vimshell'
 
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'
+
+[[plugins]]
+repo = 'thinca/vim-quickrun'
