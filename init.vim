@@ -103,8 +103,19 @@ nnoremap tc :<C-u>tabnew<CR>
 nnoremap tn :<C-u>tabNext<CR>
 nnoremap tp :<C-u>tabprevious<CR>
 
+
+" Plugin mapping
+let mapleader = "\<Space>"
+
+" Git mapping
+nnoremap <Leader>gs :Gstatus<CR>
+nnoremap <Leader>ga :Gwrite<CR>
+nnoremap <Leader>gc :Gcommit<CR>
+nnoremap <Leader>gd :Gdiff<CR>
+nnoremap <Leader>gl :Glog<CR>
+
 " NERDTree mapping
-nnoremap <silent> nt :NERDTreeToggle<CR>
+nnoremap <Leader>nt :NERDTreeToggle<CR>
 
 " Denite mapping
 autocmd FileType denite call s:denite_my_settings()
