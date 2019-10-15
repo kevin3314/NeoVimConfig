@@ -65,3 +65,6 @@ repo = 'Shougo/neosnippet-snippets'
 
 [[plugins]]
 repo = 'thinca/vim-quickrun'
+
+[[plugins]]
+repo = 'tomtom/tcomment_vim'

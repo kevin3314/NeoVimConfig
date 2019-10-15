@@ -120,6 +120,9 @@ nnoremap <Leader>n :NERDTreeToggle<CR>
 " QuickRun mapping
 nnoremap <Leader>qr :QuickRun<CR>
 
+" TComment mapping
+xnoremap <Leader>co :TComment<CR>
+
 " Denite mapping
 autocmd FileType denite call s:denite_my_settings()
 function! s:denite_my_settings() abort
