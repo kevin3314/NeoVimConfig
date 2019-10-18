@@ -123,6 +123,9 @@ nnoremap <Leader>qr :QuickRun<CR>
 " TComment mapping
 xnoremap <Leader>co :TComment<CR>
 
+" Tagbar mapping
+nnoremap <Leader>tb :TagbarToggle<CR>
+
 " Denite mapping
 autocmd FileType denite call s:denite_my_settings()
 function! s:denite_my_settings() abort
