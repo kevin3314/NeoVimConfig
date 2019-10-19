@@ -24,6 +24,9 @@ set shiftwidth=2
 "エラーメッセージの時にピープを鳴らさない
 set noerrorbells
 
+" path for ctags
+set tags+=.git/tags
+
 if has('vim_starting')
     " 挿入モード時に非点滅の縦棒タイプのカーソル
     let &t_SI .= "\e[6 q"
