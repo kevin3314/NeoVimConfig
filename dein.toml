@@ -80,3 +80,10 @@ repo = 'simeji/winresizer'
 
 [[plugins]]
 repo = 'majutsushi/tagbar'
+
+[[plugins]]
+repo = 'soramugi/auto-ctags.vim'
+hook_add = '''
+let g:auto_ctags = 1
+let g:auto_ctags_directory_list = ['.git', '.svn']
+'''

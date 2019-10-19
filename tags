@@ -1,0 +1,65 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/c9b2362/
+<CR>	init.vim	/^  nnoremap <silent><buffer><expr> <CR>$/;"	m
+<Leader>co	init.vim	/^xnoremap <Leader>co :TComment<CR>$/;"	m
+<Leader>ga	init.vim	/^nnoremap <Leader>ga :Gwrite<CR>$/;"	m
+<Leader>gc	init.vim	/^nnoremap <Leader>gc :Gcommit<CR>$/;"	m
+<Leader>gd	init.vim	/^nnoremap <Leader>gd :Gdiff<CR>$/;"	m
+<Leader>gl	init.vim	/^nnoremap <Leader>gl :Glog<CR>$/;"	m
+<Leader>gs	init.vim	/^nnoremap <Leader>gs :Gstatus<CR>$/;"	m
+<Leader>n	init.vim	/^nnoremap <Leader>n :NERDTreeToggle<CR>$/;"	m
+<Leader>qr	init.vim	/^nnoremap <Leader>qr :QuickRun<CR>$/;"	m
+<Leader>tb	init.vim	/^nnoremap <Leader>tb :TagbarToggle<CR>$/;"	m
+<Space>	init.vim	/^  nnoremap <silent><buffer><expr> <Space>$/;"	m
+GetVisualWord	init.vim	/^function! g:GetVisualWord() abort$/;"	f
+GetVisualWordEscape	init.vim	/^function! g:GetVisualWordEscape() abort$/;"	f
+How To Use	README.md	/^# How To Use$/;"	c
+Notice	README.md	/^## Notice$/;"	s
+bb	init.vim	/^nnoremap <silent> bb :Denite buffer<CR>$/;"	m
+bn	init.vim	/^nnoremap <silent> bn :bnext<CR>$/;"	m
+bp	init.vim	/^nnoremap <silent> bp :bprev<CR>$/;"	m
+d	init.vim	/^  nnoremap <silent><buffer><expr> d$/;"	m
+dF	init.vim	/^nnoremap <silent> dF :DeniteBufferDir file<CR>$/;"	m
+df	init.vim	/^nnoremap <silent> df :DeniteBufferDir file\/rec<CR>$/;"	m
+dg	init.vim	/^nnoremap <silent> dg :DeniteBufferDir -no-empty grep<CR>$/;"	m
+fg	init.vim	/^xnoremap <silent> fg :Denite grep:::`GetVisualWordEscape()`<CR>$/;"	m
+fl	init.vim	/^nnoremap <silent> fl :ALEFix<CR>$/;"	m
+g:python3_host_prog	init.vim	/^let g:python3_host_prog = system('(type pyenv &>\/dev\/null && echo -n "$PYENV_VIRTUAL_ENV\/bin\//;"	v
+g:rc_dir	init.vim	/^  let g:rc_dir    = expand("~\/.config\/nvim\/")$/;"	v
+i	init.vim	/^  nnoremap <silent><buffer><expr> i$/;"	m
+mapleader	init.vim	/^let mapleader = "\\<Space>"$/;"	v
+p	init.vim	/^  nnoremap <silent><buffer><expr> p$/;"	m
+q	init.vim	/^  nnoremap <silent><buffer><expr> q$/;"	m
+s:dein_dir	init.vim	/^let s:dein_dir = expand('~\/.cache\/dein')$/;"	v
+s:dein_repo_dir	init.vim	/^let s:dein_repo_dir = s:dein_dir . 'repos\/github.com\/Shougo\/dein.vim'$/;"	v
+s:denite_my_settings	init.vim	/^function! s:denite_my_settings() abort$/;"	f
+s:lazy_toml	init.vim	/^  let s:lazy_toml = g:rc_dir . '\/dein_lazy.toml'$/;"	v
+s:toml	init.vim	/^  let s:toml      = g:rc_dir . '\/dein.toml'$/;"	v
+sH	init.vim	/^nnoremap sH <C-w>H$/;"	m
+sJ	init.vim	/^nnoremap sJ <C-w>J$/;"	m
+sK	init.vim	/^nnoremap sK <C-w>K$/;"	m
+sL	init.vim	/^nnoremap sL <C-w>L$/;"	m
+sQ	init.vim	/^nnoremap sQ :<C-u>bd<CR>$/;"	m
+sh	init.vim	/^nnoremap sh <C-w>h$/;"	m
+sj	init.vim	/^nnoremap sj <C-w>j$/;"	m
+sk	init.vim	/^nnoremap sk <C-w>k$/;"	m
+sl	init.vim	/^nnoremap sl <C-w>l$/;"	m
+sq	init.vim	/^nnoremap sq :<C-u>q<CR>$/;"	m
+ss	init.vim	/^nnoremap ss :<C-u>sp<CR>$/;"	m
+sv	init.vim	/^nnoremap sv :<C-u>vs<CR>$/;"	m
+t,	init.vim	/^nnoremap t, <C-w>>$/;"	m
+t-	init.vim	/^nnoremap t- <C-w>-$/;"	m
+t.	init.vim	/^nnoremap t. <C-w><$/;"	m
+t;	init.vim	/^nnoremap t; <C-w>+$/;"	m
+tc	init.vim	/^nnoremap tc :<C-u>tabnew<CR>$/;"	m
+tn	init.vim	/^nnoremap tn :<C-u>tabNext<CR>$/;"	m
+tp	init.vim	/^nnoremap tp :<C-u>tabprevious<CR>$/;"	m
+vp	init.vim	/^nnoremap <silent> vp :VimShellPop<CR>$/;"	m
+vs	init.vim	/^nnoremap <silent> vs :VimShell<CR>$/;"	m
+vsc	init.vim	/^nnoremap <silent> vsc :VimShellCreate<CR>$/;"	m
