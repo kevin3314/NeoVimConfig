@@ -123,6 +123,9 @@ nnoremap <Leader>qr :QuickRun<CR>
 " TComment mapping
 xnoremap <Leader>co :TComment<CR>
 
+" Ctags mapping
+nnoremap <Leader>ct :Ctags<CR>
+
 " Tagbar mapping
 nnoremap <Leader>tb :TagbarToggle<CR>
 
