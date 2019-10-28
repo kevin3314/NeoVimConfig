@@ -106,6 +106,8 @@ nnoremap tc :<C-u>tabnew<CR>
 nnoremap tn :<C-u>tabNext<CR>
 nnoremap tp :<C-u>tabprevious<CR>
 
+" ハイライトを解除
+nnoremap <F3> :noh<CR>
 
 " Plugin mapping
 let mapleader = "\<Space>"
