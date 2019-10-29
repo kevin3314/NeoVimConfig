@@ -162,22 +162,22 @@ function! g:GetVisualWordEscape() abort
   return word
 endfunction
 
-nnoremap <Leader> bb :Denite buffer<CR>
-nnoremap <Leader> df :DeniteBufferDir file/rec<CR>
-nnoremap <Leader> dF :DeniteBufferDir file<CR>
-nnoremap <Leader> dg :DeniteBufferDir -no-empty grep<CR>
-xnoremap <Leader> fg :Denite grep:::`GetVisualWordEscape()`<CR>
+nnoremap <Leader>bb :Denite buffer<CR>
+nnoremap <Leader>df :DeniteBufferDir file/rec<CR>
+nnoremap <Leader>dF :DeniteBufferDir file<CR>
+nnoremap <Leader>dg :DeniteBufferDir -no-empty grep<CR>
+xnoremap <Leader>fg :Denite grep:::`GetVisualWordEscape()`<CR>
 
 
 " vimshell map
-nnoremap <Leader> vs :VimShell<CR>
-nnoremap <Leader> vsc :VimShellCreate<CR>
-nnoremap <Leader> vp :VimShellPop<CR>
+nnoremap <Leader>vs :VimShell<CR>
+nnoremap <Leader>vsc :VimShellCreate<CR>
+nnoremap <Leader>vp :VimShellPop<CR>
 
-nnoremap <Leader> bp :bprev<CR>
-nnoremap <Leader> bn :bnext<CR>
+nnoremap <Leader>bp :bprev<CR>
+nnoremap <Leader>bn :bnext<CR>
 " fxでfix実行
-nnoremap <Leader> fl :ALEFix<CR>
+nnoremap <Leader>fl :ALEFix<CR>
 
 colorscheme molokai
 hi Comment ctermfg=DarkGreen
