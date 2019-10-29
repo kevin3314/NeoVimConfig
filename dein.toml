@@ -82,6 +82,9 @@ repo = 'simeji/winresizer'
 repo = 'majutsushi/tagbar'
 
 [[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
 repo = 'soramugi/auto-ctags.vim'
 hook_add = '''
 let g:auto_ctags_directory_list = ['.git']
