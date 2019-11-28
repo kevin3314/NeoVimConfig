@@ -164,7 +164,7 @@ endfunction
 
 nnoremap <Leader>bb :Denite buffer<CR>
 nnoremap <Leader>df :DeniteBufferDir file/rec<CR>
-nnoremap <Leader>dF :DeniteBufferDir file<CR>
+nnoremap <Leader>dF :DeniteProjectDir file/rec<CR>
 nnoremap <Leader>dg :DeniteBufferDir -no-empty grep<CR>
 xnoremap <Leader>fg :Denite grep:::`GetVisualWordEscape()`<CR>
 
