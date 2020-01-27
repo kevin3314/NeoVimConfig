@@ -180,5 +180,8 @@ nnoremap <Leader>bn :bnext<CR>
 " fxでfix実行
 nnoremap <Leader>fl :ALEFix<CR>
 
+" mp で MarkdownPreview 起動
+nnoremap <Leader>mp :MarkdownPreview<CR>
+
 colorscheme molokai
 hi Comment ctermfg=DarkGreen
