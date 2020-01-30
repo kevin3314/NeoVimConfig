@@ -168,6 +168,7 @@ nnoremap <Leader>dF :DeniteProjectDir file/rec<CR>
 nnoremap <Leader>dg :DeniteBufferDir -no-empty grep<CR>
 nnoremap <Leader>dG :DeniteProjectDir -no-empty grep<CR>
 xnoremap <Leader>vg :Denite grep:::`GetVisualWordEscape()`<CR>
+xnoremap <Leader>vG :DeniteProjectDir grep:::`GetVisualWordEscape()`<CR>
 
 
 " vimshell map
