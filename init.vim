@@ -167,7 +167,7 @@ nnoremap <Leader>df :DeniteBufferDir file/rec<CR>
 nnoremap <Leader>dF :DeniteProjectDir file/rec<CR>
 nnoremap <Leader>dg :DeniteBufferDir -no-empty grep<CR>
 nnoremap <Leader>dG :DeniteProjectDir -no-empty grep<CR>
-xnoremap <Leader>fg :Denite grep:::`GetVisualWordEscape()`<CR>
+xnoremap <Leader>vg :Denite grep:::`GetVisualWordEscape()`<CR>
 
 
 " vimshell map
@@ -179,6 +179,9 @@ nnoremap <Leader>bp :bprev<CR>
 nnoremap <Leader>bn :bnext<CR>
 " fxでfix実行
 nnoremap <Leader>fl :ALEFix<CR>
+
+" mp で MarkdownPreview 起動
+nnoremap <Leader>mp :MarkdownPreview<CR>
 
 colorscheme molokai
 hi Comment ctermfg=DarkGreen
