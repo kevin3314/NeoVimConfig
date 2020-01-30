@@ -7,8 +7,6 @@ let g:deoplete#sources#jedi#show_docstring = 1
 
 let g:deoplete#sources#jedi#python_path = g:python3_host_prog
 
-let g:deoplete#sources = {'rust': ['ale', 'racer']}
-
 let g:deoplete#max_list = 50
 let g:deoplete#auto_complee_delay = 1
 let g:deoplete#auto_complete_start_length = 1
