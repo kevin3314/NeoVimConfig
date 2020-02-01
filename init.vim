@@ -184,5 +184,8 @@ nnoremap <Leader>fl :ALEFix<CR>
 " mp で MarkdownPreview 起動
 nnoremap <Leader>mp :MarkdownPreview<CR>
 
+" python の docstring 生成
+nnoremap <Leader>pd :Docstring<CR>
+
 colorscheme molokai
 hi Comment ctermfg=DarkGreen

@@ -42,6 +42,10 @@ let g:jedi#completions_command = "<C-Space>"
 let g:jedi#rename_command = "<leader>r"
 '''
 
+[[plugins]]
+repo = "pixelneo/vim-python-docstring"
+on_ft = ['py', 'python']
+
 #ruby
 #repo = 'uplus/deoplete-solargraph'
 #soragraph
