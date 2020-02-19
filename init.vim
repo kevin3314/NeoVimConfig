@@ -40,6 +40,9 @@ syntax on
 
 " ワーニン行のハイライトを変更
 autocmd ColorScheme * highlight SpellCap ctermbg=52 gui=undercurl guisp=#FF0000
+" 文字列の色を変更
+autocmd ColorScheme * highlight String ctermfg=51
+autocmd ColorScheme * highlight Character ctermfg=51
 
 "Dein Script --------------------------------
 " Add path to python 3
