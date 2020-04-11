@@ -24,6 +24,9 @@ set shiftwidth=2
 "エラーメッセージの時にピープを鳴らさない
 set noerrorbells
 
+" spell checking
+set spell
+
 " path for ctags
 set tags+=.git/tags
 
