@@ -43,6 +43,9 @@ syntax on
 
 " ワーニン行のハイライトを変更
 autocmd ColorScheme * highlight SpellCap ctermbg=52 gui=undercurl guisp=#FF0000
+" 文字列の色を変更
+autocmd ColorScheme * highlight String ctermfg=51
+autocmd ColorScheme * highlight Character ctermfg=51
 
 "Dein Script --------------------------------
 " Add path to python 3
@@ -167,9 +170,11 @@ endfunction
 
 nnoremap <Leader>bb :Denite buffer<CR>
 nnoremap <Leader>df :DeniteBufferDir file/rec<CR>
-nnoremap <Leader>dF :DeniteBufferDir file<CR>
+nnoremap <Leader>dF :DeniteProjectDir file/rec<CR>
 nnoremap <Leader>dg :DeniteBufferDir -no-empty grep<CR>
-xnoremap <Leader>fg :Denite grep:::`GetVisualWordEscape()`<CR>
+nnoremap <Leader>dG :DeniteProjectDir -no-empty grep<CR>
+xnoremap <Leader>vg :Denite grep:::`GetVisualWordEscape()`<CR>
+xnoremap <Leader>vG :DeniteProjectDir grep:::`GetVisualWordEscape()`<CR>
 
 
 " vimshell map
@@ -181,6 +186,12 @@ nnoremap <Leader>bp :bprev<CR>
 nnoremap <Leader>bn :bnext<CR>
 " fxでfix実行
 nnoremap <Leader>fl :ALEFix<CR>
+
+" mp で MarkdownPreview 起動
+nnoremap <Leader>mp :MarkdownPreview<CR>
+
+" python の docstring 生成
+nnoremap <Leader>pd :Docstring<CR>
 
 colorscheme molokai
 hi Comment ctermfg=DarkGreen
