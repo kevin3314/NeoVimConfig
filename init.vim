@@ -140,6 +140,20 @@ nnoremap <Leader>ct :Ctags<CR>
 " Tagbar mapping
 nnoremap <Leader>tb :TagbarToggle<CR>
 
+" Startify config
+let g:startify_custom_header = [
+  \"ポッポー",
+  \".（；：)",
+  \".(：；)",
+  \".(：；)",
+  \".(：；)",
+  \"（；)",
+  \"　[]　　　∧∧",
+  \"　||　|可(・ω・`)",
+  \"（ニニl Ｈ￣∪Ｈ￣|",
+  \". y.tb-O-◎◎―◎◎",
+  \]
+
 " Denite mapping
 autocmd FileType denite call s:denite_my_settings()
 function! s:denite_my_settings() abort
